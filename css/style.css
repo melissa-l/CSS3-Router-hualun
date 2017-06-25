@@ -1,19 +1,7 @@
-/*@-webkit-keyframes piston {
-    0% { margin-top: 0; }
-    50% { margin-top: 80px; }
-    100% { margin-top: 0; }
-}
 @keyframes piston {
     0% { margin-top: 0; }
     50% { margin-top: 80px; }
     100% { margin-top: 0; }
-}
-@-webkit-keyframes arm {
-    0% { -webkit-transform: rotate(0); }
-    25% { -webkit-transform: rotate(-18deg); }
-    50% { -webkit-transform: rotate(0); }
-    75% { -webkit-transform: rotate(18deg); }
-    100% { -webkit-transform: rotate(0); }
 }
 
 @keyframes arm {
@@ -22,11 +10,12 @@
     50% { transform: rotate(0); }
     75% { transform: rotate(18deg); }
     100% { transform: rotate(0); }
-}*/
+}
 
 html {
     height: 100%;
 }
+
 body {
     margin: 60px 0 0;
     text-align: center;
@@ -68,11 +57,10 @@ body {
     line-height: 60px;
     background: #555;
     border-radius: 10px;
-    /*-webkit-animation: piston 1.2s cubic-bezier(.5,0,.5,1) infinite;*/
-    /*animation: piston 1.2s cubic-bezier(.5,0,.5,1) infinite;*/ 
+    animation: piston 1.2s cubic-bezier(.5,0,.5,1) infinite;
     box-shadow: inset 0 -4px 0 rgba(0,0,0,.2), inset 0 4px 0 rgba(255,255,255,.2);
 }
-/*
+
 .piston:nth-child(1) .block { -webkit-animation-delay: 0s; animation-delay: 0s; }
 .piston:nth-child(2) .block { -webkit-animation-delay: .1s; animation-delay: .1s; }
 .piston:nth-child(3) .block { -webkit-animation-delay: .2s; animation-delay: .2s; }
@@ -89,9 +77,6 @@ body {
     border-radius: 10px;
     box-shadow: inset 0 -22px 0 rgba(0,0,0,.2);
     z-index: -1;
-    -webkit-transform-origin: center 10px;
-    -webkit-animation: arm 1.2s linear infinite;
-    -webkit-animation-delay: inherit;
     transform-origin: center 10px;
     animation: arm 1.2s linear infinite;
     animation-delay: inherit;
@@ -114,9 +99,8 @@ body {
     bottom: 0;
     width: 100px;
     height: 100px;
-    border-radius: 10px;
     border-radius: 50%;
     border: 20px solid rgba(0,0,0,.1);
     box-sizing: border-box;
-    z-index: -1;
-}*/
+    z-index: -2;
+}
